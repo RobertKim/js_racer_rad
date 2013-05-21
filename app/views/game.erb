@@ -1,11 +1,79 @@
 <div class="container">
   <div class="hero-unit">
 
+    <form action="/endgame" method="get">
+      <input class="btn btn-danger" type="submit" value="End Game">
+    </form>
+    
     <h1> Play Rad Racer now! </h1>
 
-    <h3> This game will be against <%= @player1.username %> and <%= @player2.username %>. </h3>
+    <h2>Welcome to your game!</h2>  
+    <h2>The matchup: </h2>
+    <h1> <%= @player1.username %> vs. <%= @player2.username %>!</h1><br>
+    <h2>May the best man win!</h2>
+  </div>
 
-    
+  <div class="rows">
+    <h3> Sweep the leg, Johnny! </h3>
 
+  <table class="racer_table">
+    <tr id="player1_strip">
+      <td class="active"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td id="finish"></td>
+    </tr>
+    <tr id="player2_strip">
+	     <td class="active"></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td></td>
+	     <td id="finish"></td>
+     </tr>
+   </table><br><br><br>
  </div>
+
 </div>
