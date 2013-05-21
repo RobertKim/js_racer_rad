@@ -1,0 +1,111 @@
+<div class="container">
+  <div class="hero-unit">
+
+    <h1> RAD RACER BIATCH! </h1>
+    <br>
+  
+  <% unless current_player %>
+
+    <h3>Sign up with your opponent to race his punk-ass!</h3> 
+  <% end %>
+
+  <% if current_player %>
+    <h3>Welcome to your game!  The match up will be between <%= @player1.username %> and <%= @player2.username %><h3>
+  <% end %>
+
+ </div>
+
+ <div class="rows">
+   <!-- <div class="span4">
+    <h2>New to Rad Racer? </h2>
+    <h3>Sign up here!</h3>
+    <form action="/signup" method="post">
+      <input type="text" name="username" placeholder="Username"><br>
+      <input type="password" name="password" placeholder="Password"><br>
+      <input class="btn btn-success" type="submit" value="Signup!">
+    </form>
+   </div> -->
+
+ <% unless current_player %>
+
+   <div class="span11">
+    <h1>Time to leave your opponent in the dust... </h1>
+    <h3>Login here!</h3>
+    <form action="/signup" method="post">
+      <input type="text" name="username1" placeholder="Player 1 Username"><br>
+      <input type="text" name="username2" placeholder="Player 2 Username"><br>
+      <input class="btn btn-success" type="submit" value="Play">
+    </form>
+   </div>
+ </div>
+  <% end %>
+
+  <% if current_player %>
+
+  <
+
+  <table class="racer_table">
+      <tr id="player1_strip">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="finish"></td>
+      </tr>
+      <tr id="player2_strip">
+       <td class="active"></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td id="finish"></td>
+     </tr>
+   </table>
+
+
+
+ </div>
+ <% end %>
+
+</div>
